@@ -71,7 +71,7 @@ body {
   margin-left: 30px;
   color: #333333;
   font-size: 13px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .navigation__phone {
@@ -80,5 +80,118 @@ body {
   font-weight: 400;
   color: #333333;
   text-decoration: none;
+}
+
+.first {
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #f5f5f5;
+  color: #333333;
+}
+
+.first-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .first-block {
+    max-width: 960px;
+    width: 96%;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-block {
+    max-width: 720px;
+    width: 96%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.first-text {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-right: 100px;
+}
+
+.first-text__title {
+  margin-top: 0;
+  font-size: 41px;
+  font-weight: 500;
+  line-height: 55px;
+  margin-bottom: 35px;
+}
+
+.first-text__subtitle {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.first-list {
+  margin: 0;
+  padding: 0;
+}
+
+.first-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.first-list__image {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffd200;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 30px;
+}
+
+.first-list__text {
+  max-width: 300px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .first-list__text {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .first-list__text {
+    max-width: 300px;
+  }
+}
+
+.first-image {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.05);
+          box-shadow: rgba(0, 0, 0, 0.05);
 }
 /*# sourceMappingURL=style.css.map */
