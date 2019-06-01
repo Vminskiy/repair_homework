@@ -28,11 +28,11 @@ body {
   text-decoration: none;
 }
 
-.navigation {
+.header {
   padding: 8px 0;
 }
 
-.navigation-block {
+.header-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +44,7 @@ body {
           align-items: center;
 }
 
-.navigation__info {
+.header__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,7 +53,7 @@ body {
           align-items: center;
 }
 
-.navigation__address {
+.header__address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,17 +67,17 @@ body {
   color: #333333;
 }
 
-.navigation__button {
+.header__button {
   margin-left: 30px;
   color: #333333;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
-.navigation__phone {
+.header__phone {
   margin-top: 10px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   color: #333333;
   text-decoration: none;
 }
@@ -121,13 +121,13 @@ body {
 .first-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 100px;
+  padding-right: 70px;
 }
 
 .first-text__title {
   margin-top: 0;
   font-size: 41px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 55px;
   margin-bottom: 35px;
 }
@@ -135,7 +135,7 @@ body {
 .first-text__subtitle {
   display: block;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   margin-bottom: 60px;
 }
 
