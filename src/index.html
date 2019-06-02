@@ -22,7 +22,7 @@
             <a href="tel:+7(495)42-251-31" class="header__phone">+7 (495) 42-251-31</a>
           </div>
           <!-- /.header__contacts -->
-          <a href="#" class="button header__button">Перезвоните мне</a>
+          <a href="#" class="button header__button" id="button">Перезвоните мне</a>
           <!-- /.button header_button -->
         </div>
         <!-- /.header__info -->
@@ -58,7 +58,7 @@
                   <img src="img/first/calculator.png" alt="Калькулятор">
                 </div>
                 <span class="first-list__text">
-                  Рассчитаем смету на работы <br>
+                  Рассчитаем смету на работы 
                   и материалы в день обращения
                 </span>
               </li>
@@ -97,8 +97,10 @@
           </span>
           <!-- /.subtitle -->
           <form action="#" class="form second__form">
-            <input type="text" class="input second__input" placeholder="Ваше имя">
-            <input type="tel" class="input second__input" placeholder="Ваш телефон">
+            <div class="second__inputs">
+              <input type="text" class="input second__input" placeholder="Ваше имя">
+              <input type="tel" class="input second__input" placeholder="Ваш телефон">
+            </div>
             <button href="#" class="button second__button">
               Получить бесплатный дизайн-проект
             </button>
@@ -127,5 +129,17 @@
     <!-- /.second -->
   </main>
 
+<div class="modal" id="modal">
+  <div class="modal-dialog">
+    <button class="modal-dialog__close" id="close">&times;</button>
+    <h4 class="modal-dialog__title">Всплывающее окно</h4>
+    <!-- /.modal-dialog__title -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+
+  <script src="js/main.js"></script>
 </body>
 </html>

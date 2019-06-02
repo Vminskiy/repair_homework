@@ -33,7 +33,12 @@
     font-size: 16px
   &__form
     padding-right: 90px
+  &__inputs
+    display: flex
   &__input
+    max-width: 240
+    width: 40%
+    margin: 0
     padding: 18px 26px
     margin-bottom: 30px
     font-size: 15px
@@ -68,6 +73,8 @@
 @media (max-width: 1200px)
   .second
     background-size: cover
+    &__inputs
+      flex-direction: column
     &__input
       width: 85%
       margin-bottom: 10px
@@ -97,6 +104,8 @@
       max-width: 100%
       margin-bottom: 24px
       font-size: 16px
+    &__inputs
+      flex-direction: column
     &__input
       max-width: 750px
       width: 90%
