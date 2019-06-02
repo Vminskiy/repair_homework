@@ -1,0 +1,107 @@
+.second
+  box-sizing: border-box
+  padding-top: 90px
+  padding-bottom: 90px
+  color: $text-color
+  background: url('../img/second/Kitchen.png') no-repeat
+  background-size: contain
+  background-position: center right
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    width: 50%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: #fff
+  &-block
+    position: relative
+    width: 50%
+    padding-right: 50px
+  &__title
+    max-width: 360px
+    margin-bottom: 24px
+    font-size: 24px
+    line-height: 35px
+    +bold
+  &__subtitle
+    display: block
+    max-width: 250px
+    margin-bottom: 24px
+    font-size: 16px
+  &__form
+    padding-right: 90px
+  &__input
+    padding: 18px 26px
+    margin-bottom: 30px
+    font-size: 15px
+    line-height: 24px
+    &:first-child
+      margin-right: 10px
+  &__button
+    width: 100%
+    min-height: 70px
+    font-size: 15px
+    line-height: 18px
+    border: none 
+  &__description
+    width: 85%
+    padding-top: 18px
+    display: flex
+    justify-content: space-between
+    text-align: left
+    align-items: center
+  &__left-side
+    max-width: 50%
+  &__text
+    font-size: 15px
+    line-height: 24px
+    margin-bottom: 15px
+  &__phone
+    color: $text-color
+    text-decoration: none
+    +bold
+    font-size: 15px
+    line-height: 24px
+@media (max-width: 1200px)
+  .second
+    background-size: cover
+    &__input
+      width: 85%
+      margin-bottom: 10px
+    &__button
+      width: 100%
+      font-size: 13px
+    &__description
+      flex-direction: column
+      padding-top: 20px
+    &__left-side
+      max-width: 100%
+@media (max-width: 768px)
+  .second
+    background: none
+    background-color: #fff
+    &-block
+      width: 100%
+      padding-right: 0
+    &__title
+      max-width: 100%
+      margin-bottom: 24px
+      font-size: 24px
+      +bold
+      line-height: 35px
+    &__subtitle
+      display: block
+      max-width: 100%
+      margin-bottom: 24px
+      font-size: 16px
+    &__input
+      max-width: 750px
+      width: 90%
+      margin-bottom: 10px
+    &__button
+      width: 100%
+      font-size: 13px
+    &__left-side
+      max-width: 100%

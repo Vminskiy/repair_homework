@@ -43,6 +43,20 @@ body {
   background-color: #ffd200;
   padding: 18px 28px;
   text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+}
+
+.input {
+  border-radius: 10px;
+  border: 1px solid #dddddd;
+  color: #999999;
+  background-color: #ffffff;
 }
 
 .header {
@@ -89,8 +103,6 @@ body {
   margin-left: 30px;
   color: #333333;
   font-size: 13px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
 }
 
 .header__phone {
@@ -181,6 +193,10 @@ body {
   margin-bottom: 30px;
 }
 
+.first-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .first-list__image {
   width: 40px;
   height: 40px;
@@ -220,5 +236,167 @@ body {
   -webkit-box-shadow: rgba(0, 0, 0, 0.05);
           box-shadow: rgba(0, 0, 0, 0.05);
   margin-right: -40px;
+}
+
+.second {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  color: #333333;
+  background: url("../img/second/Kitchen.png") no-repeat;
+  background-size: contain;
+  background-position: center right;
+  position: relative;
+}
+
+.second:before {
+  position: absolute;
+  content: '';
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+
+.second-block {
+  position: relative;
+  width: 50%;
+  padding-right: 50px;
+}
+
+.second__title {
+  max-width: 360px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  line-height: 35px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.second__subtitle {
+  display: block;
+  max-width: 250px;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+
+.second__form {
+  padding-right: 90px;
+}
+
+.second__input {
+  padding: 18px 26px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.second__input:first-child {
+  margin-right: 10px;
+}
+
+.second__button {
+  width: 100%;
+  min-height: 70px;
+  font-size: 15px;
+  line-height: 18px;
+  border: none;
+}
+
+.second__description {
+  width: 85%;
+  padding-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second__left-side {
+  max-width: 50%;
+}
+
+.second__text {
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+
+.second__phone {
+  color: #333333;
+  text-decoration: none;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .second {
+    background-size: cover;
+  }
+  .second__input {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+  .second__button {
+    width: 100%;
+    font-size: 13px;
+  }
+  .second__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+  .second__left-side {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .second {
+    background: none;
+    background-color: #fff;
+  }
+  .second-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .second__title {
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-family: 'Museo Sans Bold', sans-serif;
+    font-weight: 700;
+    line-height: 35px;
+  }
+  .second__subtitle {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+  .second__input {
+    max-width: 750px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .second__button {
+    width: 100%;
+    font-size: 13px;
+  }
+  .second__left-side {
+    max-width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
