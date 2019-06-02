@@ -59,6 +59,10 @@ body {
   background-color: #ffffff;
 }
 
+.input:focus-within {
+  border: 1px solid orange;
+}
+
 .header {
   padding: 8px 0;
 }
@@ -121,6 +125,8 @@ body {
   padding-bottom: 25px;
   background-color: #f5f5f5;
   color: #333333;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .first-block {
@@ -160,6 +166,7 @@ body {
 }
 
 .first-text__title {
+  margin-top: 0;
   display: block;
   font-size: 41px;
   font-family: 'Museo Sans Bold', sans-serif;
@@ -241,7 +248,7 @@ body {
 .second {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 90px;
+  padding-top: 40px;
   padding-bottom: 90px;
   color: #333333;
   background: url("../img/second/Kitchen.png") no-repeat;
@@ -267,6 +274,7 @@ body {
 }
 
 .second__title {
+  padding-top: 0;
   max-width: 360px;
   margin-bottom: 24px;
   font-size: 24px;
@@ -327,10 +335,10 @@ body {
 .second__text {
   font-size: 15px;
   line-height: 24px;
-  margin-bottom: 15px;
 }
 
 .second__phone {
+  padding-top: 0;
   color: #333333;
   text-decoration: none;
   font-family: 'Museo Sans Bold', sans-serif;
