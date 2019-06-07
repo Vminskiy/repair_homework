@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -146,18 +147,26 @@
       </h2>
 
     <div class="slider">
-      <div class="slider__item"><img src="img/third/image_1.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_1.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
-      <div class="slider__item"><img src="img/third/image_2.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_2.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
-      <div class="slider__item"><img src="img/third/image_3.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_3.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
-      <div class="slider__item"><img src="img/third/image_1.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_1.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
-      <div class="slider__item"><img src="img/third/image_2.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_2.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
-      <div class="slider__item"><img src="img/third/image_3.jpg" alt="Слайд"></div>
+      <div class="slider__item"><img src="img/third/image_3.jpg" alt="Слайд" class="slider__image"></div>
       <!-- /.slider__item -->
+    </div>
+    <div class="arrows third__arrows">
+      <div class="arrows__left">
+        <img src="img/third/left-arrow.png" alt="Предыдущий слайд">        
+      </div>
+      <div class="arrows__right">
+          <img src="img/third/right-arrow.png" alt="Следующий слайд">        
+        </div>
     </div>
     <!-- /.slider -->
   </div>
@@ -176,5 +185,32 @@
         crossorigin="anonymous"></script>
   <!-- <script src="js/modal.js"></script> -->
   <script src="js/button.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.slider').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: $('.arrows__left'),
+        nextArrow: $('.arrows__right'),
+        responsive: [
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 </body>
 </html>
