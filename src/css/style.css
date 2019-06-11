@@ -290,7 +290,6 @@ body {
 
 .second-block {
   position: relative;
-  width: 50%;
   padding-right: 50px;
 }
 
@@ -322,8 +321,7 @@ body {
 }
 
 .second__input {
-  max-width: 240;
-  width: 40%;
+  max-width: 240px;
   margin: 0;
   padding: 18px 26px;
   margin-bottom: 30px;
@@ -337,6 +335,7 @@ body {
 
 .second__button {
   width: 100%;
+  max-width: 495px;
   min-height: 70px;
   font-size: 15px;
   line-height: 18px;
@@ -392,7 +391,8 @@ body {
     margin-bottom: 10px;
   }
   .second__button {
-    width: 100%;
+    width: 80%;
+    max-width: 290px;
     font-size: 13px;
   }
   .second__description {
@@ -443,6 +443,7 @@ body {
   }
   .second__button {
     width: 100%;
+    max-width: 700px;
     font-size: 13px;
   }
   .second__left-side {
@@ -829,7 +830,9 @@ body {
   max-width: 400px;
 }
 
-.form {
+.form-box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -870,7 +873,7 @@ body {
   .questions-list__text {
     font-size: 14px;
   }
-  .form {
+  .form-box {
     margin-top: 60px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -898,7 +901,7 @@ body {
   .questions {
     text-align: left;
   }
-  .form {
+  .form-box {
     margin-top: 60px;
   }
 }
