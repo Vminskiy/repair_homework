@@ -98,10 +98,10 @@
             бесплатного дизайн-проекта!
           </span>
           <!-- /.subtitle -->
-          <form action="#" class="form second__form">
+          <form action="#" class="form second__form" id="second-form">
             <div class="second__inputs">
-              <input type="text" class="input second__input" placeholder="Ваше имя">
-              <input type="tel" class="input second__input" placeholder="Ваш телефон">
+              <input type="text" name="username" class="input second__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input second__input phone" placeholder="Ваш телефон">
             </div>
             <button href="#" class="button second__button wow fadeIn" data-wow-duration="2s" data-wow-delay="0.2s">
               Получить бесплатный дизайн-проект
@@ -346,10 +346,10 @@
         <!-- /.sixth__title -->
         <p class="sixth__subtitle">Для этого заполните форму ниже</p>
         <!-- /.sixth__subtitle -->
-        <form action="#">
-          <input type="text" class="input sixth__input" placeholder="Ваше имя">
-          <input type="tel" class="input sixth__input" placeholder="Ваш телефон">
-          <input type="email" class="input sixth__input" placeholder="Ваш e-mail">
+        <form action="#" id="sixth-form">
+          <input type="text" name="username" class="input sixth__input" placeholder="Ваше имя">
+          <input type="tel" name="phone" class="input sixth__input phone" placeholder="Ваш телефон">
+          <input type="email" name="email" class="input sixth__input" placeholder="Ваш e-mail">
           <button class="button sixth__button">Рассчитать стоимость</button>
           <!-- /.button sixth__button -->
         </form>
@@ -378,10 +378,68 @@
   <script src="js/button.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script>
     new WOW().init();
     // анимация 
     $(document).ready(function(){
+      $('#second-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          phone: {
+            required: true,
+          },
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите имя из более чем двух символов",
+            maxlength: "Введите имя из менее чем пятнадцати символов",
+          },
+          phone: {
+            required: "Заполните поле",
+          },
+        }
+      });
+      // Валидация формы во второй секции
+      $('#sixth-form').validate({
+        rules: {
+          username: {
+            required: true,
+            minlength: 2,
+            maxlength: 15,
+          },
+          phone: {
+            required: true,
+          },
+          email: {
+            required: true,
+            email: true,
+          }
+        },
+        messages: {
+          username: {
+            required: "Заполните поле",
+            minlength: "Введите имя из более чем двух символов",
+            maxlength: "Введите имя из менее чем пятнадцати символов",
+          },
+          phone: {
+            required: "Заполните поле",
+          },
+          email: {
+            required: "Заполните поле",
+            email: "Введите корректный email",
+          }
+        }
+      });
+      // Валидация формы в шестой секции
+      $('.phone').mask('8 (999) 999-99-99');
+      // маска для телефона
       $('.slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
