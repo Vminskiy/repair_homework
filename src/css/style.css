@@ -50,6 +50,7 @@ body {
 
 .button:hover {
   background-color: #ffdb33;
+  cursor: pointer;
 }
 
 .input {
@@ -320,9 +321,19 @@ body {
   display: flex;
 }
 
+.second__input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .second__input {
+  display: block;
   max-width: 240px;
-  margin: 0;
   padding: 18px 26px;
   margin-bottom: 30px;
   font-size: 15px;
@@ -334,6 +345,7 @@ body {
 }
 
 .second__button {
+  margin-top: 15px;
   width: 100%;
   max-width: 495px;
   min-height: 70px;
@@ -343,7 +355,7 @@ body {
 }
 
 .second__description {
-  width: 85%;
+  width: 45%;
   padding-top: 18px;
   display: -webkit-box;
   display: -ms-flexbox;
