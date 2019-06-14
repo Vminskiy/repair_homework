@@ -111,3 +111,45 @@
     text-align: left
   .form-box
     margin-top: 60px
+@media (max-width: 580px)
+  .sixth
+    background-image: url('../img/sixth/sixth-color-bg.jpg'), url('../img/sixth/sixth-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 100%, cover
+    background-repeat: repeat-x, no-repeat
+    width: 100%
+    padding-right: 10px
+    padding-bottom: 30px
+    &__title
+      max-width: 280px
+      font-size: 18px
+      line-height: 1.4
+    &__subtitle
+      font-size: 14px
+      line-height: 1.4
+      max-width: 200px
+    &__form
+      flex-basis: 100%
+    &__input
+      margin: auto
+      margin-bottom: 10px
+      display: block
+      width: 80%
+      max-width: 240px
+    &__button
+      font-size: 14px
+    &__description
+      font-size: 14px
+      line-height: 1.4
+      max-width: 200px
+  .questions-list
+    &__item
+      width: 100%
+      max-width: 300px
+      padding-right: 10px
+    &__text
+      font-size: 14px
+      max-width: 200px
+  .form-box
+    padding-left: 0
+    align-items: center
